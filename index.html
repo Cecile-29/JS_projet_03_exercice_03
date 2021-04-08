@@ -11,16 +11,29 @@
 		<h1 class="col-6 text-center">JS projet_03 exercice_03</h1>
 		<p class="col-9 text-center">Créez trois div. Une rouge, une bleu et une verte. Au clic sur une div, la couleur est appliqué au texte.</p>
 		<div class="container-fluid justify-content-center col-10 pt-3 m-3" style="background-color: #9C81F5;">
-			<div class="text-justify text-primary"  id="color">
-				<p id="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<!-- <div class="text-justify text-primary">
+				 <p id="paragraphes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 			<div class="row justify-content-center">
 				<div class="row col-12 justify-content-center">
-					<input class="col-5 btn btn-outline-warning p-3 m-3" onclick="changeColorInYellow()" name="" type="button" value="Donnez la couleur jaune au texte !">
-					<input class="col-5 btn btn-outline-success p-3 m-3" onclick="changeColorInGreen()"  name="" type="button" value="Changez la en vert !">
+					<input class="col-5 btn btn-outline-warning p-3 m-3" onclick="displayChangeColor('text', 'yellow')" name="" type="button" value="Donnez la couleur jaune au texte !">
+					<input class="col-5 btn btn-outline-success p-3 m-3" onclick="displayChangeColor('text', 'green')"  name="" type="button" value="Changez la en vert !">
 				</div>
 				<div class="row">
-					<input class="btn btn-outline-primary p-3 m-3" onclick="changeColorInBlue()" name="" type="button" value="Revenez à l'état initial !">
+					<input class="btn btn-outline-primary p-3 m-3" onclick="displayChangeColor('text', '#007BFF')" name="" type="button" value="Revenez à l'état initial !">
+				</div> -->
+				<!-- ****************** Correction Ksenia ************* -->
+				<div class="text-justify text-primary">
+				<p id="paragraphes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+				<div class="row justify-content-center">
+					<div class="row col-12 justify-content-center">
+						<input class="col-5 btn btn-outline-warning p-3 m-3" onclick="displayChangeColor('yellow')" name="" type="button" value="Donnez la couleur jaune au texte !">
+						<input class="col-5 btn btn-outline-success p-3 m-3" onclick="displayChangeColor('green')"  name="" type="button" value="Changez la en vert !">
+					</div>
+					<div class="row">
+						<input class="btn btn-outline-primary p-3 m-3" onclick="displayChangeColor('#007BFF')" name="" type="button" value="Revenez à l'état initial !">
+					</div>
 				</div>
 			</div>
 		</div>
